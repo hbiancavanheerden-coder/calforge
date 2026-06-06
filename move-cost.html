@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Move Cost Calculator | CalForge – Free Online Calculators</title>
+  <meta name="description" content="Estimate the total cost of moving home including labour, transport, and packing supplies.">
+  <meta name="keywords" content="moving cost calculator, moving house cost, relocation cost estimator, free calculator, calforge, online calculator">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://calforge.site/calculators/move-cost.html">
+  <meta property="og:title" content="Move Cost Calculator | CalForge">
+  <meta property="og:description" content="Estimate the total cost of moving home including labour, transport, and packing supplies.">
+  <meta property="og:url" content="https://calforge.site/calculators/move-cost.html">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebApplication","name":"Move Cost Calculator","url":"https://calforge.site/calculators/move-cost.html","applicationCategory":"UtilityApplication","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+  </script>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%234f8ef7'/><text y='24' x='4' font-size='22' font-family='Arial' font-weight='bold' fill='white'>⚡</text></svg>">
+</head>
+<body>
+<nav>
+  <a href="../index.html" class="nav-logo">Cal<span>Forge</span></a>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../blog/index.html">Blog</a></li>
+    <li><a href="../pages/about.html">About</a></li>
+    <li><a href="../pages/contact.html">Contact</a></li>
+    <li><a href="../pages/sitemap.html">Sitemap</a></li>
+  </ul>
+  <div class="nav-burger" id="nav-burger"><span></span><span></span><span></span></div>
+</nav>
+<main>
+<div class="calc-page">
+  <div class="calc-page-header">
+    <div class="breadcrumb"><a href="../index.html">Home</a> / Move Cost Calculator</div>
+    <h1>📦 Move Cost Calculator</h1>
+    <p class="tagline">Estimate the total cost of moving home including labour, transport, and packing supplies.</p>
+  </div>
+  <div class="calc-card">
+    <h2>Enter Your Values</h2>
+    <div class="calc-row"><div class="field-group"><label class="field-label">Currency</label><select id="mv-currency"><option value="$">$ USD</option><option value="£">£ GBP</option><option value="€">€ EUR</option>
+            <option value="R">R ZAR</option><option value="A$">A$ AUD</option><option value="C$">C$ CAD</option>
+            <option value="¥">¥ JPY</option><option value="₹">₹ INR</option><option value="CHF">CHF</option>
+            <option value="NZ$">NZ$ NZD</option><option value="kr">kr SEK</option><option value="BRL">BRL</option></select></div><div class="field-group"><label class="field-label">Move Distance (km)</label><input type="number" id="mv-dist" placeholder="50"><div class="field-hint">Distance from old to new home</div></div></div>
+<div class="calc-row"><div class="field-group"><label class="field-label">Number of Rooms</label><input type="number" id="mv-rooms" placeholder="3"><div class="field-hint">How many rooms you're moving</div></div><div class="field-group"><label class="field-label">Number of Helpers</label><input type="number" id="mv-helpers" placeholder="2"><div class="field-hint">People helping on the day</div></div></div>
+<div class="calc-row"><div class="field-group"><label class="field-label">Estimated Hours</label><input type="number" id="mv-hours" placeholder="6"><div class="field-hint">How long the move will take</div></div><div class="field-group"><label class="field-label">Hourly Rate per Helper</label><input type="number" id="mv-rate" placeholder="25"><div class="field-hint">Labour cost per person per hour</div></div></div>
+<button class="calc-btn" onclick="calcMoveCost()">Estimate Move Cost</button><div class="result-box" id="mv-result"><div class="result-label"></div><div class="result-value"></div><div class="result-sub"></div></div>
+  </div>
+  <div class="info-card"><h2>ℹ️ Moving tips</h2><p>Book professional movers at least 2 weeks in advance.</p><p>Declutter before packing — less stuff = lower cost.</p><p>Budget extra 15–20% for unexpected costs on moving day.</p></div>
+</div>
+</main>
+<footer>
+  <div class="footer-inner">
+    <div class="footer-bottom">
+      <p>© 2026 CalForge · <a href="../pages/privacy.html">Privacy</a> · <a href="../pages/terms.html">Terms</a> · <a href="../pages/disclaimer.html">Disclaimer</a></p>
+      <p><a href="../index.html">← All Calculators</a></p>
+    </div>
+  </div>
+</footer>
+<script src="../assets/js/calc.js"></script>
+</body>
+</html>

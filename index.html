@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CalForge – Free Online Calculators | Finance, Health, Converters & More</title>
+  <meta name="description" content="CalForge offers 55+ free online calculators including mortgage, BMI, currency converter, compound interest, loan, retirement, and more. Fast, accurate, no sign-up needed.">
+  <meta name="keywords" content="free online calculator, mortgage calculator, BMI calculator, currency converter, compound interest calculator, loan calculator, retirement calculator, percentage calculator, VAT calculator, calorie calculator, unit converter, finance calculator, health calculator, calforge">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="CalForge">
+  <link rel="canonical" href="https://calforge.site/">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="CalForge – Free Online Calculators">
+  <meta property="og:description" content="55+ free online calculators for finance, health, conversions, productivity & more.">
+  <meta property="og:url" content="https://calforge.site/">
+  <meta property="og:site_name" content="CalForge">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="CalForge – Free Online Calculators">
+  <meta name="twitter:description" content="55+ free calculators. No sign-up. Finance, health, converters and more.">
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebSite","name":"CalForge","url":"https://calforge.site/","description":"Free online calculators for finance, health, and more.","potentialAction":{"@type":"SearchAction","target":"https://calforge.site/?q={search_term_string}","query-input":"required name=search_term_string"}}
+  </script>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%234f8ef7'/><text y='24' x='4' font-size='22' font-family='Arial' font-weight='bold' fill='white'>⚡</text></svg>">
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">Cal<span>Forge</span></a>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="blog/index.html">Blog</a></li>
+    <li><a href="pages/about.html">About</a></li>
+    <li><a href="pages/contact.html">Contact</a></li>
+    <li><a href="pages/sitemap.html">Sitemap</a></li>
+  </ul>
+  <div class="nav-burger" id="nav-burger" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<main>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-badge">Free · No Sign-Up · 55+ Tools</div>
+  <h1>Every Calculator<br>You'll Ever <span>Need</span></h1>
+  <p>Finance, health, converters, productivity tools — all free, fast, and mobile-friendly.</p>
+  <div class="hero-stats">
+    <div class="hero-stat"><div class="num">55+</div><div class="lbl">Calculators</div></div>
+    <div class="hero-stat"><div class="num">100%</div><div class="lbl">Free</div></div>
+    <div class="hero-stat"><div class="num">0</div><div class="lbl">Sign-ups</div></div>
+  </div>
+  <div class="search-wrap">
+    <svg class="search-icon" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    <input type="text" id="site-search" placeholder="Search calculators…" autocomplete="off">
+  </div>
+</section>
+
+<!-- AD SLOT TOP -->
+<div style="max-width:1200px;margin:0 auto;padding:0 24px;">
+</div>
+
+<!-- FEATURED 3 CALCULATORS -->
+<div class="section">
+  <div class="section-title">⚡ Try These Now</div>
+  <div class="section-sub">Three of our most popular calculators, ready to use below.</div>
+
+  <div class="featured-grid">
+
+    <!-- MORTGAGE -->
+    <div class="feat-card">
+      <h3>🏠 Mortgage Calculator</h3>
+      <div class="desc">Calculate your monthly mortgage repayment instantly.</div>
+      <div class="calc-row">
+        <div class="field-group">
+          <label class="field-label">Currency</label>
+          <select id="m-currency">
+            <option value="$">$ USD</option><option value="£">£ GBP</option><option value="€">€ EUR</option>
+            <option value="R">R ZAR</option><option value="A$">A$ AUD</option><option value="C$">C$ CAD</option>
+            <option value="¥">¥ JPY</option><option value="₹">₹ INR</option><option value="CHF">CHF</option>
+          </select>
+        </div>
+        <div class="field-group">
+          <label class="field-label">Loan Amount</label>
+          <input type="number" id="m-principal" placeholder="e.g. 350000">
+          <div class="field-hint">Enter the total loan amount</div>
+        </div>
+      </div>
+      <div class="calc-row">
+        <div class="field-group">
+          <label class="field-label">Interest Rate (%)</label>
+          <input type="number" id="m-rate" placeholder="e.g. 6.5" step="0.1">
+          <div class="field-hint">Annual interest rate</div>
+        </div>
+        <div class="field-group">
+          <label class="field-label">Loan Term (Years)</label>
+          <input type="number" id="m-years" placeholder="e.g. 25">
+          <div class="field-hint">Repayment period in years</div>
+        </div>
+      </div>
+      <button class="calc-btn" onclick="calcMortgage()">Calculate Payment</button>
+      <div class="result-box" id="m-result">
+        <div class="result-label"></div>
+        <div class="result-value"></div>
+        <div class="result-sub"></div>
+      </div>
+      <a href="calculators/mortgage.html" style="display:block;text-align:center;margin-top:12px;font-size:0.82rem;color:var(--text3);">Full calculator →</a>
+    </div>
+
+    <!-- BMI -->
+    <div class="feat-card">
+      <h3>⚖️ BMI Calculator</h3>
+      <div class="desc">Find out your Body Mass Index and health category.</div>
+      <div class="calc-row full">
+        <div class="field-group">
+          <label class="field-label">Unit System</label>
+          <select id="bmi-unit">
+            <option value="metric">Metric (kg / cm)</option>
+            <option value="imperial">Imperial (lbs / inches)</option>
+          </select>
+        </div>
+      </div>
+      <div class="calc-row">
+        <div class="field-group">
+          <label class="field-label">Height</label>
+          <input type="number" id="bmi-h" placeholder="e.g. 175">
+          <div class="field-hint">cm or inches</div>
+        </div>
+        <div class="field-group">
+          <label class="field-label">Weight</label>
+          <input type="number" id="bmi-w" placeholder="e.g. 70">
+          <div class="field-hint">kg or lbs</div>
+        </div>
+      </div>
+      <button class="calc-btn" onclick="calcBMI()">Calculate BMI</button>
+      <div class="result-box" id="bmi-result">
+        <div class="result-label"></div>
+        <div class="result-value"></div>
+        <div class="result-sub"></div>
+      </div>
+      <a href="calculators/bmi.html" style="display:block;text-align:center;margin-top:12px;font-size:0.82rem;color:var(--text3);">Full calculator →</a>
+    </div>
+
+    <!-- CURRENCY -->
+    <div class="feat-card">
+      <h3>💱 Currency Converter</h3>
+      <div class="desc">Convert between currencies using live exchange rates.</div>
+      <div class="calc-row full">
+        <div class="field-group">
+          <label class="field-label">Amount</label>
+          <input type="number" id="cur-amount" placeholder="e.g. 100">
+        </div>
+      </div>
+      <div class="calc-row">
+        <div class="field-group">
+          <label class="field-label">From</label>
+          <select id="cur-from">
+            <option>USD</option><option>EUR</option><option>GBP</option><option>ZAR</option>
+            <option>AUD</option><option>CAD</option><option>JPY</option><option>INR</option>
+            <option>CHF</option><option>CNY</option><option>BRL</option><option>MXN</option>
+            <option>NGN</option><option>KES</option><option>GHS</option>
+          </select>
+        </div>
+        <div class="field-group">
+          <label class="field-label">To</label>
+          <select id="cur-to">
+            <option>ZAR</option><option>USD</option><option>EUR</option><option>GBP</option>
+            <option>AUD</option><option>CAD</option><option>JPY</option><option>INR</option>
+            <option>CHF</option><option>CNY</option><option>BRL</option><option>MXN</option>
+            <option>NGN</option><option>KES</option><option>GHS</option>
+          </select>
+        </div>
+      </div>
+      <button class="calc-btn" id="cur-btn" onclick="convertCurrency()">Convert</button>
+      <div class="result-box" id="cur-result">
+        <div class="result-label"></div>
+        <div class="result-value"></div>
+        <div class="result-sub"></div>
+      </div>
+      <a href="calculators/currency.html" style="display:block;text-align:center;margin-top:12px;font-size:0.82rem;color:var(--text3);">Full calculator →</a>
+    </div>
+
+  </div><!-- /featured-grid -->
+
+  <!-- AD MID -->
+
+  <!-- ── FINANCE ─────────────────────────────────── -->
+  <div class="cat-section">
+    <div class="cat-header">
+      <div class="cat-icon" style="background:rgba(79,142,247,0.15);">💰</div>
+      <div>
+        <div class="cat-title">Finance Calculators</div>
+        <div class="cat-count">21 tools</div>
+      </div>
+    </div>
+    <div class="tools-grid">
+      <a href="calculators/mortgage.html" class="tool-btn"><span class="emoji">🏠</span> Mortgage Calculator</a>
+      <a href="calculators/loan.html" class="tool-btn"><span class="emoji">💳</span> Loan Calculator</a>
+      <a href="calculators/roi.html" class="tool-btn"><span class="emoji">📈</span> ROI Calculator</a>
+      <a href="calculators/compound-interest.html" class="tool-btn"><span class="emoji">🔄</span> Compound Interest</a>
+      <a href="calculators/savings.html" class="tool-btn"><span class="emoji">🏦</span> Savings Calculator</a>
+      <a href="calculators/retirement.html" class="tool-btn"><span class="emoji">🌅</span> Retirement Calculator</a>
+      <a href="calculators/salary.html" class="tool-btn"><span class="emoji">💼</span> Salary Calculator</a>
+      <a href="calculators/salary-tax.html" class="tool-btn"><span class="emoji">🧾</span> Salary Tax Calculator</a>
+      <a href="calculators/percentage.html" class="tool-btn"><span class="emoji">%</span> Percentage Calculator</a>
+      <a href="calculators/vat.html" class="tool-btn"><span class="emoji">🏷️</span> VAT Calculator</a>
+      <a href="calculators/profit.html" class="tool-btn"><span class="emoji">📊</span> Profit Calculator</a>
+      <a href="calculators/margin.html" class="tool-btn"><span class="emoji">📉</span> Margin Calculator</a>
+      <a href="calculators/markup.html" class="tool-btn"><span class="emoji">🔖</span> Markup Calculator</a>
+      <a href="calculators/inflation.html" class="tool-btn"><span class="emoji">📆</span> Inflation Calculator</a>
+      <a href="calculators/currency.html" class="tool-btn"><span class="emoji">💱</span> Currency Converter</a>
+      <a href="calculators/fuel-cost.html" class="tool-btn"><span class="emoji">⛽</span> Fuel Cost Calculator</a>
+      <a href="calculators/subscription.html" class="tool-btn"><span class="emoji">🔁</span> Subscription Calculator</a>
+      <a href="calculators/emergency-fund.html" class="tool-btn"><span class="emoji">🆘</span> Emergency Fund</a>
+      <a href="calculators/bill-splitter.html" class="tool-btn"><span class="emoji">🍽️</span> Bill Splitter</a>
+      <a href="calculators/daily-cost.html" class="tool-btn"><span class="emoji">📅</span> Daily Cost Calculator</a>
+      <a href="calculators/move-cost.html" class="tool-btn"><span class="emoji">📦</span> Move Cost Calculator</a>
+      <a href="calculators/credit-card.html" class="tool-btn"><span class="emoji">💳</span> Credit Card Repayment</a>
+      <a href="calculators/break-even.html" class="tool-btn"><span class="emoji">⚖️</span> Break-Even Calculator</a>
+      <a href="calculators/commission.html" class="tool-btn"><span class="emoji">🤝</span> Commission Calculator</a>
+      <a href="calculators/net-worth.html" class="tool-btn"><span class="emoji">💎</span> Net Worth Calculator</a>
+    </div>
+  </div>
+
+  <!-- ── HEALTH ──────────────────────────────────── -->
+  <div class="cat-section">
+    <div class="cat-header">
+      <div class="cat-icon" style="background:rgba(0,212,170,0.15);">❤️</div>
+      <div>
+        <div class="cat-title">Health Calculators</div>
+        <div class="cat-count">9 tools</div>
+      </div>
+    </div>
+    <div class="tools-grid">
+      <a href="calculators/bmi.html" class="tool-btn"><span class="emoji">⚖️</span> BMI Calculator</a>
+      <a href="calculators/bmr.html" class="tool-btn"><span class="emoji">🔥</span> BMR Calculator</a>
+      <a href="calculators/calorie.html" class="tool-btn"><span class="emoji">🥗</span> Calorie Calculator</a>
+      <a href="calculators/water-intake.html" class="tool-btn"><span class="emoji">💧</span> Water Intake</a>
+      <a href="calculators/age.html" class="tool-btn"><span class="emoji">🎂</span> Age Calculator</a>
+      <a href="calculators/body-fat.html" class="tool-btn"><span class="emoji">📐</span> Body Fat Calculator</a>
+      <a href="calculators/ideal-weight.html" class="tool-btn"><span class="emoji">🎯</span> Ideal Weight</a>
+      <a href="calculators/macro.html" class="tool-btn"><span class="emoji">🥩</span> Macro Calculator</a>
+    </div>
+  </div>
+
+  <!-- ── TIME / PRODUCTIVITY ─────────────────────── -->
+  <div class="cat-section">
+    <div class="cat-header">
+      <div class="cat-icon" style="background:rgba(247,169,79,0.15);">⏱️</div>
+      <div>
+        <div class="cat-title">Time &amp; Productivity Tools</div>
+        <div class="cat-count">9 tools</div>
+      </div>
+    </div>
+    <div class="tools-grid">
+      <a href="calculators/time-calculator.html" class="tool-btn"><span class="emoji">⏰</span> Time Calculator</a>
+      <a href="calculators/time-left.html" class="tool-btn"><span class="emoji">⌛</span> Time Left Calculator</a>
+      <a href="calculators/days-between.html" class="tool-btn"><span class="emoji">📅</span> Days Between Dates</a>
+      <a href="calculators/hours-calculator.html" class="tool-btn"><span class="emoji">🕐</span> Hours Calculator</a>
+      <a href="calculators/study-timer.html" class="tool-btn"><span class="emoji">📚</span> Study Timer</a>
+      <a href="calculators/decision-wheel.html" class="tool-btn"><span class="emoji">🎡</span> Decision Wheel</a>
+      <a href="calculators/pomodoro.html" class="tool-btn"><span class="emoji">🍅</span> Pomodoro Timer</a>
+      <a href="calculators/random-number.html" class="tool-btn"><span class="emoji">🎲</span> Random Number</a>
+      <a href="calculators/password-generator.html" class="tool-btn"><span class="emoji">🔐</span> Password Generator</a>
+    </div>
+  </div>
+
+  <!-- ── CONVERTERS ─────────────────────────────── -->
+  <div class="cat-section">
+    <div class="cat-header">
+      <div class="cat-icon" style="background:rgba(124,92,252,0.15);">🔄</div>
+      <div>
+        <div class="cat-title">Converters</div>
+        <div class="cat-count">10 tools</div>
+      </div>
+    </div>
+    <div class="tools-grid">
+      <a href="calculators/unit-converter.html" class="tool-btn"><span class="emoji">📏</span> Unit Converter</a>
+      <a href="calculators/weight-converter.html" class="tool-btn"><span class="emoji">⚖️</span> Weight Converter</a>
+      <a href="calculators/temperature.html" class="tool-btn"><span class="emoji">🌡️</span> Temperature Converter</a>
+      <a href="calculators/area.html" class="tool-btn"><span class="emoji">🗺️</span> Area Converter</a>
+      <a href="calculators/cm-to-inch.html" class="tool-btn"><span class="emoji">📐</span> CM → Inch</a>
+      <a href="calculators/inch-to-cm.html" class="tool-btn"><span class="emoji">📐</span> Inch → CM</a>
+      <a href="calculators/kg-to-lbs.html" class="tool-btn"><span class="emoji">⚖️</span> KG → LBS</a>
+      <a href="calculators/km-to-miles.html" class="tool-btn"><span class="emoji">🛣️</span> KM → Miles</a>
+      <a href="calculators/file-size.html" class="tool-btn"><span class="emoji">💾</span> File Size Converter</a>
+      <a href="calculators/cooking-measurement.html" class="tool-btn"><span class="emoji">🍳</span> Cooking Measurements</a>
+    </div>
+  </div>
+
+  <!-- ── PERFORMANCE / FITNESS ──────────────────── -->
+  <div class="cat-section">
+    <div class="cat-header">
+      <div class="cat-icon" style="background:rgba(247,79,126,0.15);">🏃</div>
+      <div>
+        <div class="cat-title">Performance &amp; Fitness</div>
+        <div class="cat-count">2 tools</div>
+      </div>
+    </div>
+    <div class="tools-grid">
+      <a href="calculators/speed.html" class="tool-btn"><span class="emoji">⚡</span> Speed Calculator</a>
+      <a href="calculators/pace.html" class="tool-btn"><span class="emoji">👟</span> Pace Calculator</a>
+    </div>
+  </div>
+
+  <!-- ── HOME / UTILITY ─────────────────────────── -->
+  <div class="cat-section">
+    <div class="cat-header">
+      <div class="cat-icon" style="background:rgba(164,247,79,0.15);">🏡</div>
+      <div>
+        <div class="cat-title">Home &amp; Utility</div>
+        <div class="cat-count">6 tools</div>
+      </div>
+    </div>
+    <div class="tools-grid">
+      <a href="calculators/paint.html" class="tool-btn"><span class="emoji">🎨</span> Paint Calculator</a>
+      <a href="calculators/tile.html" class="tool-btn"><span class="emoji">🔲</span> Tile Calculator</a>
+      <a href="calculators/solar.html" class="tool-btn"><span class="emoji">☀️</span> Solar Savings</a>
+      <a href="calculators/electricity.html" class="tool-btn"><span class="emoji">⚡</span> Electricity Cost</a>
+      <a href="calculators/internet-speed.html" class="tool-btn"><span class="emoji">📡</span> Internet Speed</a>
+    </div>
+  </div>
+
+  <!-- AD BOTTOM -->
+
+</div><!-- /section -->
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="nav-logo">Cal<span style="color:var(--accent)">Forge</span></div>
+        <p>Free online calculators for everyone. Finance, health, converters, and productivity — no sign-up, no cost, always available.</p>
+        <p style="margin-top:8px;font-size:0.8rem;color:var(--text3);">contact: <a href="mailto:mymomentsinprint@gmail.com" style="color:var(--text3)">mymomentsinprint@gmail.com</a></p>
+      </div>
+      <div class="footer-col">
+        <h4>Finance</h4>
+        <ul>
+          <li><a href="calculators/mortgage.html">Mortgage</a></li>
+          <li><a href="calculators/loan.html">Loan</a></li>
+          <li><a href="calculators/compound-interest.html">Compound Interest</a></li>
+          <li><a href="calculators/savings.html">Savings</a></li>
+          <li><a href="calculators/currency.html">Currency</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Health</h4>
+        <ul>
+          <li><a href="calculators/bmi.html">BMI</a></li>
+          <li><a href="calculators/bmr.html">BMR</a></li>
+          <li><a href="calculators/calorie.html">Calorie</a></li>
+          <li><a href="calculators/water-intake.html">Water Intake</a></li>
+          <li><a href="calculators/age.html">Age</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="pages/about.html">About</a></li>
+          <li><a href="pages/contact.html">Contact</a></li>
+          <li><a href="pages/privacy.html">Privacy Policy</a></li>
+          <li><a href="pages/terms.html">Terms &amp; Conditions</a></li>
+          <li><a href="pages/disclaimer.html">Disclaimer</a></li>
+          <li><a href="pages/sitemap.html">Sitemap</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 CalForge. All rights reserved.</p>
+      <p>Free to use · No sign-up required · <a href="pages/privacy.html" style="color:var(--text3)">Privacy</a> · <a href="pages/terms.html" style="color:var(--text3)">Terms</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/calc.js"></script>
+</body>
+</html>

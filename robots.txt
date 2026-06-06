@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://calforge.site/sitemap.xml
+
+# Disallow nothing — all pages are public and indexable

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tile Calculator | CalForge – Free Online Calculators</title>
+  <meta name="description" content="Calculate how many tiles you need for any floor or wall area. Includes waste percentage.">
+  <meta name="keywords" content="tile calculator, how many tiles, floor tile calculator, tile quantity, free calculator, calforge, online calculator">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://calforge.site/calculators/tile.html">
+  <meta property="og:title" content="Tile Calculator | CalForge">
+  <meta property="og:description" content="Calculate how many tiles you need for any floor or wall area. Includes waste percentage.">
+  <meta property="og:url" content="https://calforge.site/calculators/tile.html">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebApplication","name":"Tile Calculator","url":"https://calforge.site/calculators/tile.html","applicationCategory":"UtilityApplication","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+  </script>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%234f8ef7'/><text y='24' x='4' font-size='22' font-family='Arial' font-weight='bold' fill='white'>⚡</text></svg>">
+</head>
+<body>
+<nav>
+  <a href="../index.html" class="nav-logo">Cal<span>Forge</span></a>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../blog/index.html">Blog</a></li>
+    <li><a href="../pages/about.html">About</a></li>
+    <li><a href="../pages/contact.html">Contact</a></li>
+    <li><a href="../pages/sitemap.html">Sitemap</a></li>
+  </ul>
+  <div class="nav-burger" id="nav-burger"><span></span><span></span><span></span></div>
+</nav>
+<main>
+<div class="calc-page">
+  <div class="calc-page-header">
+    <div class="breadcrumb"><a href="../index.html">Home</a> / Tile Calculator</div>
+    <h1>🔲 Tile Calculator</h1>
+    <p class="tagline">Calculate how many tiles you need for any floor or wall area. Includes waste percentage.</p>
+  </div>
+  <div class="calc-card">
+    <h2>Enter Your Values</h2>
+    <div class="calc-row"><div class="field-group"><label class="field-label">Area Length (m)</label><input type="number" id="tl-l" placeholder="4"><div class="field-hint">Length of the space in metres</div></div><div class="field-group"><label class="field-label">Area Width (m)</label><input type="number" id="tl-w" placeholder="3"><div class="field-hint">Width of the space in metres</div></div></div>
+<div class="calc-row"><div class="field-group"><label class="field-label">Tile Size</label><select id="tl-tile"><option value="0.04">20×20 cm</option><option value="0.09">30×30 cm</option><option value="0.16">40×40 cm</option><option value="0.25">50×50 cm</option><option value="0.36">60×60 cm</option><option value="0.64">80×80 cm</option><option value="1">100×100 cm</option></select></div>
+<div class="field-group"><label class="field-label">Waste Allowance (%)</label><input type="number" id="tl-waste" placeholder="10" step="1"><div class="field-hint">Add 10% for cuts and breakage</div></div></div>
+<button class="calc-btn" onclick="calcTile()">Calculate Tiles Needed</button><div class="result-box" id="tl-result"><div class="result-label"></div><div class="result-value"></div><div class="result-sub"></div></div>
+  </div>
+  <div class="info-card"><h2>ℹ️ Tiling tips</h2><p>Always buy 10–15% extra tiles for cuts, breakage, and future repairs.</p><p>Diagonal laying patterns require more waste allowance (~15–20%).</p><p>Check that tile batches have the same lot number to avoid colour variation.</p></div>
+</div>
+</main>
+<footer>
+  <div class="footer-inner">
+    <div class="footer-bottom">
+      <p>© 2026 CalForge · <a href="../pages/privacy.html">Privacy</a> · <a href="../pages/terms.html">Terms</a> · <a href="../pages/disclaimer.html">Disclaimer</a></p>
+      <p><a href="../index.html">← All Calculators</a></p>
+    </div>
+  </div>
+</footer>
+<script src="../assets/js/calc.js"></script>
+</body>
+</html>

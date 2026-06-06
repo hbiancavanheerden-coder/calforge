@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMR Calculator | CalForge – Free Online Calculators</title>
+  <meta name="description" content="Calculate your Basal Metabolic Rate (BMR) and daily calorie needs (TDEE) based on your stats and activity level.">
+  <meta name="keywords" content="BMR calculator, basal metabolic rate, TDEE calculator, daily calorie needs, free calculator, calforge, online calculator">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://calforge.site/calculators/bmr.html">
+  <meta property="og:title" content="BMR Calculator | CalForge">
+  <meta property="og:description" content="Calculate your Basal Metabolic Rate (BMR) and daily calorie needs (TDEE) based on your stats and activity level.">
+  <meta property="og:url" content="https://calforge.site/calculators/bmr.html">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebApplication","name":"BMR Calculator","url":"https://calforge.site/calculators/bmr.html","applicationCategory":"UtilityApplication","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+  </script>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%234f8ef7'/><text y='24' x='4' font-size='22' font-family='Arial' font-weight='bold' fill='white'>⚡</text></svg>">
+</head>
+<body>
+<nav>
+  <a href="../index.html" class="nav-logo">Cal<span>Forge</span></a>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../blog/index.html">Blog</a></li>
+    <li><a href="../pages/about.html">About</a></li>
+    <li><a href="../pages/contact.html">Contact</a></li>
+    <li><a href="../pages/sitemap.html">Sitemap</a></li>
+  </ul>
+  <div class="nav-burger" id="nav-burger"><span></span><span></span><span></span></div>
+</nav>
+<main>
+<div class="calc-page">
+  <div class="calc-page-header">
+    <div class="breadcrumb"><a href="../index.html">Home</a> / BMR Calculator</div>
+    <h1>🔥 BMR Calculator</h1>
+    <p class="tagline">Calculate your Basal Metabolic Rate (BMR) and daily calorie needs (TDEE) based on your stats and activity level.</p>
+  </div>
+  <div class="calc-card">
+    <h2>Enter Your Values</h2>
+    <div class="calc-row"><div class="field-group"><label class="field-label">Gender</label><select id="bmr-gender"><option value="male">Male</option><option value="female">Female</option></select></div><div class="field-group"><label class="field-label">Weight (kg)</label><input type="number" id="bmr-w" placeholder="70"><div class="field-hint">Body weight in kilograms</div></div></div>
+<div class="calc-row"><div class="field-group"><label class="field-label">Height (cm)</label><input type="number" id="bmr-h" placeholder="175"><div class="field-hint">Height in centimetres</div></div><div class="field-group"><label class="field-label">Age (years)</label><input type="number" id="bmr-a" placeholder="30"><div class="field-hint">Your age</div></div></div>
+<div class="calc-row full"><div class="field-group"><label class="field-label">Activity Level</label><select id="bmr-act"><option value="1.2">Sedentary (little/no exercise)</option><option value="1.375">Light (1–3 days/week)</option><option value="1.55">Moderate (3–5 days/week)</option><option value="1.725">Very Active (6–7 days/week)</option><option value="1.9">Extra Active (twice daily)</option></select></div></div>
+<button class="calc-btn" onclick="calcBMR()">Calculate BMR & TDEE</button><div class="result-box" id="bmr-result"><div class="result-label"></div><div class="result-value"></div><div class="result-sub"></div></div>
+  </div>
+  <div class="info-card"><h2>ℹ️ What is BMR?</h2><p>BMR (Basal Metabolic Rate) is the number of calories your body burns at complete rest.</p><p>TDEE (Total Daily Energy Expenditure) multiplies BMR by your activity level.</p><p>Eat below TDEE to lose weight, above to gain.</p></div>
+</div>
+</main>
+<footer>
+  <div class="footer-inner">
+    <div class="footer-bottom">
+      <p>© 2026 CalForge · <a href="../pages/privacy.html">Privacy</a> · <a href="../pages/terms.html">Terms</a> · <a href="../pages/disclaimer.html">Disclaimer</a></p>
+      <p><a href="../index.html">← All Calculators</a></p>
+    </div>
+  </div>
+</footer>
+<script src="../assets/js/calc.js"></script>
+</body>
+</html>
